@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+
+  <form id="registrationForm">
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname" required><br><br>
+    
+    <label for="lastname">Last Nmae:</label><br>
+    <input type="text" id="lastname" name="lastname" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mobile">Mobile Number:</label><br>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // Stop the form from trying to POST
+      // Simulate form processing here
+
+      // Redirect to success page
+      window.location.href = "submit.html";
+    });
+  </script>
+
+</body>
+</html>
