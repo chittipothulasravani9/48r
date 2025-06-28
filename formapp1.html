@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APSRTC General Bus Pass Application</title>
+</head>
+<body>
+    <center>
+        <img src="https://media.telanganatoday.com/wp-content/uploads/2024/05/No-change-in-TSRTC-logo-cl.jpg" width="100">
+        <h3>ANDHRA PRADESH STATE ROAD TRANSPORT CORPORATION</h3>
+        <h3>GENERAL BUS PASS APPLICATION</h3>
+    </center>
+
+    <form action="form1.html" method="get">
+        <fieldset>
+            <legend> <strong>Applicant Details</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="applicant_name">Applicant Name*</label></td>
+                    <td><input type="text" id="applicant_name" name="applicant_name" required></td>
+                    <td><label for="father_name">Father's Name*</label></td>
+                    <td><input type="text" id="father_name" name="father_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth*</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                    <td><label for="aadhaar">Aadhaar Number*</label></td>
+                    <td>
+                        <input type="text" id="aadhaar" name="aadhaar" required
+                               pattern="[0-9]{12}" 
+                               title="Aadhaar number must be exactly 12 digits">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="whatsapp">Whatsapp Number*</label></td>
+                    <td>
+                        <input type="text" id="whatsapp" name="whatsapp" required
+                               pattern="[6-9][0-9]{9}" 
+                               title="Phone number must start with 6-9 and have 10 digits">
+                    </td>
+                    <td><label for="email">Email ID*</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Photo</label></td>
+                    <td><input type="file" id="photo" name="photo"></td>
+                    <td>Gender*</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male" required> 
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female"> 
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Residential Address</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="address"> Address*</label></td>
+                    <td><input type="text" id="address" name="address" required></td>
+                    <td><label for="pincode">Pincode*</label></td>
+                    <td>
+                        <input type="text" id="pincode" name="pincode" required
+                               pattern="[0-9]{6}"
+                               title="Pincode must be exactly 6 digits">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="district"> District*</label></td>
+                    <td>
+                        <select id="district" name="district" required>
+                            <option value="" disabled selected>-- Select District --</option>
+                            <option>Krishna</option>
+                            <option>NTR</option>
+                        </select>
+                    </td>
+                    <td><label for="mandal">Mandal*</label></td>
+                    <td>
+                        <select id="mandal" name="mandal" required>
+                            <option value="" disabled selected>-- Select Mandal --</option>
+                            <option>Tiruvuru</option>
+                            <option>Gampalagudem</option>
+                            <option>mulakalapalli</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Pass Type Details</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="city">Select City*</label></td>
+                    <td>
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected>-- Select City --</option>
+                            <option>Tiruvuru</option>
+                            <option>Rolupadi</option>
+                            <option>Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Mode of Payment & Pass Collection</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="payment_mode">Payment Mode*</label></td>
+                    <td>
+                        <select id="payment_mode" name="payment_mode" required>
+                            <option value="" disabled selected>-- Select Payment Mode --</option>
+                            <option>Upi</option>
+                            <option>Online banking</option>
+                            <option>Cash</option>
+                        </select>
+                    </td>
+                    <td><label for="delivery_mode">Delivery Mode*</label></td>
+                    <td>
+                        <select id="delivery_mode" name="delivery_mode" required>
+                            <option value="" disabled selected>-- Select Delivery Mode --</option>
+                            <option>Door-to-door</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="collection_center">Collect RTC Pass*</label></td>
+                    <td colspan="3">
+                        <select id="collection_center" name="collection_center" required>
+                            <option value="" disabled selected>-- Select Collection Center --</option>
+                            <option>Tiruvuru</option>
+                            <option>Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Verification</strong></legend>
+            <table>
+                <tr>
+                    <td>Enter the code: <strong>G5K7P</strong></td> 
+                          <td><label for="captcha">Code*</label>
+                          <input type="text" id="captcha" name="captcha" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <center><input type="submit" value="Submit"></center>
+    </form>
+</body>
+</html>
