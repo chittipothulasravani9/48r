@@ -1,0 +1,162 @@
+img{
+    width: 100%;
+}
+.child-1{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+}
+.child-2{
+    display: inline-block;
+    position:absolute;
+    right:10px;
+    text-decoration: none;
+    padding: 0%;
+    
+}
+nav{
+    padding:5px;
+    position: relative;
+    text-decoration: none;
+}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container-1 {
+      width: 60%;
+      margin: 30px auto;
+      border: 10 solid black;
+    }
+
+    .item {
+      position: relative;
+      display: inline-block;
+      width: 300px;
+      margin: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .item p {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 3px;
+    }
+.container{
+    width:100%;
+    padding:20px;
+    margin: auto;
+}
+.item-1,.item-2,.item-3,.item-4{
+    width: 300px;
+    display:inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+img{
+    width:100%;
+}
+h3{
+    padding:6px;
+}
+p{
+    padding:5px;
+}
+button{
+    width:100%;
+    padding: 5px;
+    
+}
+.ice{
+    width:90%;
+}
+.para{
+    padding: 10px;;
+    max-width:800px;
+    font-size: 30px;
+
+}
+a{
+    text-decoration: none;
+}
+
+.contact-section {
+      max-width: 800px;
+      margin: auto;
+}
+input::placeholder{
+      color: #999;
+    }
+input[type="text"]{
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      resize: vertical;
+    }
+.section{
+    width:20%;
+    color:white;
+    font-size: 15px;
+    background-color: black;
+    padding: 5px;
+}
+.back{
+    max-width: 1400px;
+    margin: 20px; 
+}
+.power{
+    width:100%;
+    color:white;
+    font-size: 15px;
+    background-color: black;
+    padding: 30px;
+}
+nav{
+    position: sticky;
+    top:0;
+    background-color: white;
+}
+.centered-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      padding: 10px 20px;
+      border-radius: 4px;
+}
+.Projects{
+    scroll-behavior: smooth
+}
+.About{
+    scroll-behavior: smooth
+}
+.Contact{
+    scroll-behavior: smooth
+}
