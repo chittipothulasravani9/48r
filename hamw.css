@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+div{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;  
+
+}
+.home{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.home:hover{
+    background: #fff;
+    color: black;
+    
+}

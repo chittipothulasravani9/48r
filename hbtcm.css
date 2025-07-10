@@ -1,0 +1,41 @@
+body {
+    font-family: roboto, sans-serif;
+}
+
+.navi-class {
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    border-top: 3px solid purple;
+    padding: 0px 10px;
+}
+
+.container-one {
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+    gap: 20px;
+}
+
+.container-one p {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container-search i {
+    color: #fff;
+    padding: 5px;
+}
+
+.container-search i:hover,
+.container-one p:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
