@@ -1,0 +1,19 @@
+
+body,h1,h2{font-family: "Raleway", sans-serif}
+
+body, html {height: 100%}
+
+p {
+    line-height: 2
+}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEJjQ62A305bCBEWST8XTzcvl_j4M4B0iFPg&s")
+}
+.bgimg2 {
+  background-image: url("https://www.cityflowers.co.in/cdn/shop/products/a1roses.com_54_ay4h6fyjn5v3kidc.jpg?v=1740395287")
+}
